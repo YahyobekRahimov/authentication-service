@@ -1,0 +1,159 @@
+:root {
+  --purple-900: #6c63ff;
+  --purple-800: #b5b0ff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.home__container {
+  display: flex;
+  justify-content: center;
+}
+
+.home__container a {
+  font-size: 1.5rem;
+  color: black;
+  text-decoration: none;
+  position: relative;
+  transition: 0.2s all ease-in;
+  margin-top: 20px;
+  font-weight: 800;
+  font-size: 2rem;
+}
+
+.home__container a:hover {
+  color: var(--purple-900);
+}
+
+.home__container a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -15px;
+  left: 0;
+  background-color: var(--purple-900);
+  transform: scale(0);
+  transition: 0.2s all ease-in;
+}
+
+.home__container a:hover::after {
+  transform: scale(1);
+}
+
+.form__container {
+  display: flex;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form input {
+  font-size: 1.5rem;
+  padding: 21px;
+  width: 432px;
+}
+#email::placeholder,
+#password::placeholder {
+  color: rgba(126, 124, 124, 0.4);
+  font-size: 25px;
+  font-weight: 400;
+}
+#email,
+#password {
+  border-radius: 5px;
+  border: 0.5px solid rgba(126, 124, 124, 0.4);
+  background: rgba(217, 217, 217, 0.5);
+}
+
+#submit {
+  border-radius: 10px;
+  background: rgba(108, 99, 255, 0.5);
+}
+
+#submit {
+  color: #fff;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 400;
+  border: none;
+}
+
+.submit-active {
+  background-color: var(--purple-900) !important;
+  cursor: pointer;
+  transition: 0.15s ease-in all;
+}
+
+.submit-active:hover {
+  background-color: #615cc7 !important;
+}
+.not-have-account {
+  color: #000;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.not-have-account a {
+  color: #256cd7;
+  font-size: 25px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.not-have-account a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  color: #2f2e41;
+  font-size: 60px;
+  font-weight: 800;
+}
+
+.left-side > p {
+  color: #282020;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.left-side img {
+  width: 80%;
+  pointer-events: none;
+  user-select: none;
+}
+
+.left-side {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  width: 50%;
+}
+
+.error-message {
+  font-size: 1.3rem;
+  line-height: 100%;
+  color: rgb(190, 11, 11);
+}

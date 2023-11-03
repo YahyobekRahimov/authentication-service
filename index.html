@@ -5,40 +5,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
-    <title>Document</title>
+    <title>Website</title>
+    <style>
+        :root {
+            --purple-900: #6C63FF;
+            --purple-800: #B5B0FF;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1440px;
+        }
+
+        body {
+            font-family: sans-serif;
+        }
+
+        .main__container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 40px;
+        }
+
+        button {
+            padding: 10px 70px;
+            font-size: 2rem;
+            border: 2px solid var(--purple-900);
+            background-color: #d7d4ff;
+            transition: 0.2s all ease-in;
+        }
+
+        button:hover {
+            background-color: var(--purple-900);
+            color: white;
+        }
+    </style>
 </head>
 
 <body>
-
-    <!-- Header section -->
-
-    <header class="header">
-        <div class="container header__container">
-
-        </div>
-    </header>
-
-    <!-- Main -->
-
     <main>
-        <section class="">
-            <div class="container">
+        <div class="container main__container">
+            <h1>Please, log in or sign up before you can use this website</h1>
 
+            <div class="button-group">
+                <button id="login">Log in</button>
+                <button id="sign-up">Sign up</button>
             </div>
-        </section>
-
-        <section class="">
-            <div class="container">
-
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container footer__container">
-
         </div>
-    </footer>
+    </main>
 </body>
+
+<script>
+    const login = document.getElementById('login');
+    const signUp = document.getElementById('sign-up');
+
+    login.addEventListener('click', function () {
+        window.location.href = 'login/login.html';
+    });
+
+    signUp.addEventListener('click', function () {
+        window.location.href = 'sign-up/sign-up.html';
+    })
+</script>
 
 </html>

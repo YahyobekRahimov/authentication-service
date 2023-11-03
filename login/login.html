@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <title>Login to your account</title>
+    <link rel="stylesheet" href="./login.css">
+</head>
+
+<body>
+    <main>
+        <section class="container home__container">
+            <a href="../index.html">Home</a>
+        </section>
+        <section class="form-section">
+            <div class="container form__container">
+                <div class="left-side">
+                    <h1>Welcome back.</h1>
+                    <p>Let's sign you in</p>
+                    <img src="../images/sign-in.png">
+                </div>
+                <form class="form">
+                    <input type="email" name="email" id="email" placeholder="Email">
+                    <input type="password" name="password" id="password" placeholder="Password">
+                    <div class="error-message"></div>
+                    <input disabled type="submit" id="submit" value="Continue">
+                    <p class="not-have-account">
+                        Don't have an account? <a href="../sign-up/sign-up.html">Sign up</a>
+                    </p>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+
+<script src="./login.js"></script>
+
+</html>

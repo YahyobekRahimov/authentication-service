@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create an account</title>
+    <link rel="stylesheet" href="./sign-up.css">
+</head>
+
+<body>
+    <main>
+        <section class="container home__container">
+            <a href="../index.html">Home</a>
+        </section>
+        <section class="form-section">
+            <div class="container form__container">
+                <div class="left-side">
+                    <h1>Create Account,</h1>
+                    <p>Sign up to get started</p>
+                    <img src="../images/create-account-image.png" alt="">
+                </div>
+                <div class="input-side">
+                    <div class="names">
+                        <input type="text" name="first-name" id="firstName" placeholder="First name">
+                        <input type="text" name="last-name" id="lastName" placeholder="Last name">
+                    </div>
+                    <input type="text" name="user-name" id="userName" placeholder="Username">
+                    <div class="birthdate-gender">
+                        <input type="date" name="birthdate" id="birthDate" placeholder="Birthdate">
+                        <select name="gender" id="gender">
+                            <option value="notChosen">Gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="unknown">Prefer not to answer</option>
+                        </select>
+                    </div>
+                    <p class="languages-known">
+                        What languages do you know?
+                    </p>
+                    <div class="languages">
+                        <div class="one-language">
+                            <input value="Uzbek" id="Uzbek" name="Uzbek" type="checkbox">
+                            <label for="Uzbek">Uzbek</label>
+                        </div>
+                        <div class="one-language">
+                            <input value="English" id="English" name="English" type="checkbox">
+                            <label for="English">English</label>
+                        </div>
+                        <div class="one-language">
+                            <input value="Russian" id="Russian" name="Russian" type="checkbox">
+                            <label for="Russian">Russian</label>
+                        </div>
+                    </div>
+                    <div class="phone-email">
+                        <input type="number" name="phone" id="phoneNumber" placeholder="Phone number">
+                        <input type="email" name="email" id="email" placeholder="Email">
+                    </div>
+                    <div class="passwords">
+                        <input type="password" name="password" id="password" placeholder="Password">
+                        <input type="password" name="password-confirmation" id="passwordConfirmation"
+                            placeholder="Confirm password">
+                    </div>
+                    <ul id="errors">
+
+                    </ul>
+                    <input type="submit" placeholder="Submit" id="submit">
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="./sign-up.js"></script>
+
+</html>
